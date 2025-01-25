@@ -1,5 +1,5 @@
 # Dawn_Chorus
-Firmware for a variometer built on STM32 using HAL library. Measures vertical speed and altitude changes, ideal for paragliding or gliding. Features sensor integration (e.g., barometers), real-time data processing, and low-power design. Supports customization and future Bluetooth/display extensions.
+Firmware for a variometer on STM32 using HAL (GPLv3). Tracks vertical speed and altitude for paragliding or gliding. Includes sensor integration (barometers), real-time processing, and low-power design. Supports customization and future Bluetooth/display features.
 
 
 Features:
