@@ -1,4 +1,4 @@
-#Dawn Chorus
+Dawn Chorus
 
 Dawn Chorus is an open-source project focused on developing firmware and hardware for variometers based on HAL STM32. Our mission is to provide accessible tools for the paragliding and aviation communities while fostering collaboration and innovation through open-source principles.
 
@@ -50,4 +50,4 @@ Dawn Chorus is licensed under the GNU General Public License v3.0. See the LICEN
 
 Contact
 
-For inquiries about professional services or project support, contact us at [your-email@example.com].
+For inquiries about professional services or project support, contact us at housinifx@gmail.com.
