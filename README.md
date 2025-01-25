@@ -34,7 +34,7 @@ We welcome contributions from developers, engineers, and enthusiasts! Please fol
 Dawn Chorus is licensed under the GNU General Public License v3.0. See the `LICENSE` file for details.
 
 ## Contact
-For inquiries about professional services or project support, contact us at **[housinifx@gmail.com]**.
+For inquiries about professional services or project support, contact us at **housinifx@gmail.com**.
 
 ---
 
