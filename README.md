@@ -10,7 +10,7 @@ Dawn Chorus is an open-source project focused on developing firmware and hardwar
 ## How It Works
 1. Clone the repository and build the firmware using STM32CubeIDE or your preferred environment.
 2. Assemble the hardware using provided blueprints and schematics.
-3. Flash the firmware onto your STM32 microcontroller.
+3. Flash the firmware onto your STM32 microcontroller **(currently optimized for STM32F411CEU6)**
 4. Enjoy precise altitude and vertical speed readings.
 
 ## Monetization Strategy
