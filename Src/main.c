@@ -110,7 +110,7 @@ int main(void)
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 	while (1) {
-	    // Запрашиваем температуру с MS5611
+	
 	    MS5611_RequestTemperature(&hi2c1, OSR_4096);
 	    HAL_Delay(8);
 
@@ -120,11 +120,11 @@ int main(void)
 
 	    HAL_Delay(5);
 
-	    // Запрашиваем давление с MS5611
+	
 	    MS5611_RequestPressure(&hi2c1, OSR_4096);
 	    HAL_Delay(8);
 
-	    // Читаем давление
+	
 	    MS5611_ReadPressure(&hi2c1, &MS5611);
 	    MS5611_CalculatePressure(&MS5611);
 
@@ -143,7 +143,7 @@ int main(void)
 	    sprintf(altStr1, "Alt: %.2f m", altitude1);
 	    char altStr2[20];
 	  	sprintf(altStr2, "Alt: %.2f m", altitude2);
-	    // Формируем строку для отображения давления
+	
 	    char pressStr[20];
 	    sprintf(pressStr, "Press: %.2f hPa", MS5611.P / 100.0f);
 
