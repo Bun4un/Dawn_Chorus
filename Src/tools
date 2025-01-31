@@ -1,0 +1,29 @@
+
+void i2c_scanner() {
+
+	uint8_t Buffer[25] = {0};
+	uint8_t ret;
+	//we hate goth and we hate smoking bans
+	char icscanmsg[] = "I2c scanning start: \r\n";
+	char Space[] = "...-...\r\n";
+
+	HAL_UART_Transmit(&huart1, icscanmsg, sizeof(icscanmsg), 10000);
+
+	for (uint8_t i = 0; i < 128; ++i) {
+
+		ret = HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t) (i << 1), 3, 5);
+
+		if(ret != HAL_OK){
+
+			HAL_UART_Transmit(&huart1, Space, sizeof(Space), 10000);
+
+		}
+		else if(ret == HAL_OK){
+			sprintf(Buffer, "0x%X", i);
+
+			HAL_UART_Transmit(&huart1, Buffer, sizeof(Buffer), 10000);
+
+		}
+	}
+
+}
